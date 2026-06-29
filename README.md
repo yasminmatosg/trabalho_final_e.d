@@ -13,8 +13,8 @@
 
 Cada estrutura de dados foi aplicada a um problema prático, justificando sua escolha técnica:
 
-* **Árvore Binária de Busca:** Sistema de índice de biblioteca, utilizando ISBN como chave de pesquisa para inserção, remoção e busca eficiente ($O(log n)$).
-* **Pilha (Stack):** Histórico de ações (*Undo*) de um editor de texto, operando no conceito LIFO (*Last In, First Out*).
+* **Árvore Binária de Busca:** Sistema de índice de biblioteca, utilizando ISBN como chave de pesquisa para inserção, remoção e busca eficiente O(log n).
+* **Pilha (Stack):** Histórico de ações de um editor de texto, operando no conceito LIFO (*Last In, First Out*).
 * **Fila (Queue):** Sistema de fila de impressão de documentos, garantindo o processamento FIFO (*First In, First Out*).
 * **Lista Simplesmente Encadeada:** Gerenciamento de uma *playlist* de músicas com alocação dinâmica.
 * **Lista Duplamente Encadeada:** Simulação de histórico de navegação Web, permitindo navegação bidirecional ("Voltar" e "Avançar").
