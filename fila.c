@@ -21,15 +21,12 @@ typedef struct Documento{
 
 }Documento;
 
-
 /*
     Estrutura da fila.
-
     A fila possui um ponteiro para o primeiro
     documento (frente) e outro para o último
     documento (tras).
 */
-
 typedef struct{
 
     Documento *frente;
@@ -125,7 +122,6 @@ void mostrarProximo(Impressora *imp) {
     }
 }
 
-//Mostra todos os documentos da fila.
 void mostrarFila(Impressora *imp){
 
     Documento *aux;
@@ -162,7 +158,6 @@ void mostrarFila(Impressora *imp){
     printf(COR_RESET);
 }
 
-//Remove todos os documentos da fila.
 void limparFila(Impressora *imp) {
 
     Documento *aux;

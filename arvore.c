@@ -8,12 +8,11 @@
 ========================================================*/
 
 typedef struct Livro {
-    char isbn[20]; // Alterado para string para suportar 13 dígitos e hifens sem estourar o limite de memória do 'int'
+    char isbn[20];
     char titulo[50];
     struct Livro *esquerda, *direita;
 } Livro;
 
-/* Função nova para validar o formato do ISBN-13 (ex: 978-85-333-0227-3) */
 int validarISBN(char *isbn) {
     int len = strlen(isbn);
     if (len < 13 || len > 17) return 0; 
@@ -108,7 +107,6 @@ Livro *remover(Livro *raiz, char isbn[]) {
             return aux;
         }
 
-        /* Caso 3 - possui dois filhos */
         Livro *aux = raiz->direita;
         while (aux->esquerda != NULL) {
             aux = aux->esquerda;

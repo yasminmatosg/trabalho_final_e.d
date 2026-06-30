@@ -65,7 +65,6 @@ void acessarPagina(PaginaWeb **atual, char url[])
     printf(COR_VERDE "\nPagina acessada com sucesso!\n" COR_RESET);
 }
 
-// Volta uma página
 void voltarPagina(PaginaWeb **atual)
 {
 
@@ -87,7 +86,6 @@ void voltarPagina(PaginaWeb **atual)
     printf(COR_VERDE "\nVoce voltou uma pagina.\n" COR_RESET);
 }
 
-// Avança uma página
 void avancarPagina(PaginaWeb **atual)
 {
 

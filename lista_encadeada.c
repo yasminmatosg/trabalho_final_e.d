@@ -122,7 +122,7 @@ void removerMusica(Musica **inicio, char nome[]) {
 
 void buscarMusica(Musica *inicio, char nome[]) {
 
-    while(inicio != NULL){
+    while(inicio != NULL) {
 
         if(strcmp(inicio -> nome, nome) == 0) {
 

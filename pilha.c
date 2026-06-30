@@ -97,7 +97,6 @@ void mostrarUltimaAcao(Acao *topo) {
     }
 }
 
-//Mostra todas as ações da pilha.
 void mostrarHistorico(Acao *topo) {
 
     int i = 1;

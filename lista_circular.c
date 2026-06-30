@@ -24,7 +24,7 @@ void limparBuffer() {
     while(getchar() != '\n');
 }
 
-/* Nova trava para exigir letras ou números no nome */
+// Trava para exigir letras ou números no nome
 int nomeValido(char *nome) {
     for(int i = 0; nome[i] != '\0'; i++) {
         if(isalnum(nome[i])) { 
@@ -34,7 +34,6 @@ int nomeValido(char *nome) {
     return 0;
 }
 
-//Insere um novo jogador na lista circular.
 void adicionarJogador(Jogador **inicio, char nome[]) {
     Jogador *novo;
     Jogador *ultimo;
@@ -107,7 +106,6 @@ void removerJogador(Jogador **inicio, char nome[]) {
     printf(COR_VERMELHA "\nJogador nao encontrado.\n" COR_RESET);
 }
 
-// Exibe todos os jogadores da mesa.
 void mostrarJogadores(Jogador *inicio) {
     Jogador *aux;
     int i = 1;
@@ -158,7 +156,7 @@ void simularTurnos(Jogador *inicio, int rodadas) {
     printf(COR_RESET);
 }
 
-// Mostra quem inicia a rodada. (Substituído para 'Passar Turno')
+// Mostra quem inicia a rodada.
 void passarTurno(Jogador **inicio) {
     if(*inicio == NULL) {
         printf(COR_AMARELA "\nNao ha jogadores na mesa.\n" COR_RESET);
